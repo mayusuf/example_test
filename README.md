@@ -28,18 +28,29 @@
 Url : /register
 Method : POST
 Data Format : x-www-form-urlencoded
+
 Data:
 
 string firstName (required)
+
 string lastName (required)
+
 string email (required, unique)
+
 string uuid (required, unique)
+
 string pass (required)
+
 string passWordConfirm (required)
+
 string mobileNumber
+
 string address
+
 string city
+
 string zipCode
+
 string country
 
 ## User Update
@@ -47,19 +58,31 @@ string country
 Url : /update
 Method : POST
 Data Format : x-www-form-urlencoded
+
 Data:
 
 string firstName (required)
+
 string lastName (required)
+
 string email (required, unique)
+
 string uuid (required, unique)
+
 string pass (required)
+
 string passWordConfirm (required)
+
 string apiKey (required)
+
 string mobileNumber
+
 string address
+
 string city
+
 string zipCode
+
 string country
 
 ## User Login
@@ -67,9 +90,11 @@ string country
 Url : /login
 Method : POST
 Data Format : x-www-form-urlencoded
+
 Data:
 
 string email (required)
+
 string pass (required)
 
 ## User Delete
@@ -77,6 +102,7 @@ string pass (required)
 Url : /delete
 Method : DELETE
 Data Format : params
+
 Data:
 
 string apiKey (required)
@@ -86,17 +112,27 @@ string apiKey (required)
 Url : /sregister
 Method : POST
 Data Format : x-www-form-urlencoded
+
 Data:
 
 string firstName (required)
+
 string lastName (required)
+
 string email (required)
+
 string uuid (required)
+
 string pass (required)
+
 string passWordConfirm (required)
+
 string mobileNumber 
+
 string regNumber
+
 string city
+
 string country
 
 ## Scooter Update
@@ -104,18 +140,29 @@ string country
 Url : /supdate
 Method : POST
 Data Format : x-www-form-urlencoded
+
 Data:
 
 string firstName (required)
+
 string lastName (required)
+
 string email (required)
+
 string uuid (required)
+
 string pass (required)
+
 string passWordConfirm (required)
+
 string apiKey (required)
+
 string mobileNumber 
+
 string regNumber
+
 string city
+
 string country
 
 ## Scooter Login
@@ -123,9 +170,11 @@ string country
 Url : /slogin
 Method : POST
 Data Format : x-www-form-urlencoded
+
 Data:
 
 string email (required)
+
 string pass (required)
 
 ## Scooter Delete
@@ -133,6 +182,7 @@ string pass (required)
 Url : /sdelete
 Method : DELETE
 Data Format : params
+
 Data:
 
 string apiKey (required)
@@ -142,6 +192,7 @@ string apiKey (required)
 Url : /status
 Method : GET
 Data Format : params
+
 Data:
 
 string apiKey (required)
@@ -151,6 +202,7 @@ string apiKey (required)
 Url : /slogout
 Method : GET
 Data Format : params
+
 Data:
 
 string apiKey (required)
@@ -160,13 +212,21 @@ string apiKey (required)
 Url : /trip/create
 Method : POST
 Data Format : x-www-form-urlencoded
+
 Data:
 
 string scooterId (required)
+
 string userId (required)
+
 string payment (required)
+
 string apiKey (required)
+
 string startLat (required), Latitude 
+
 string startLon (required), Longitude
+
 string endLat (required) , Latitude 
+
 string endLon (required) , Longitude
